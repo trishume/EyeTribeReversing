@@ -1,0 +1,646 @@
+Process 40965 resuming
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $1 = 565149043818913
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $2 = 4403808408
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $3 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $4 = 565149043819169
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $5 = 4403808304
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $6 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $7 = 565149043819425
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $8 = 4403808308
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $9 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $10 = 564049532191137
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $11 = 4403808408
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $12 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $13 = 564049532191393
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $14 = 4403808304
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $15 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $16 = 564049532191649
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $17 = 4403808308
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $18 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $19 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $20 = 4308722720
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $21 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $22 = 1129198475280673
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $23 = 4304543216
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $24 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $25 = 1129198475280673
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $26 = 4308738656
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $27 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $28 = 13795572511179169
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $29 = 4354890640
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $30 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+[17:35:46.444] INF: Eye Tribe Tracker firmware revision is 293
+[17:35:46.444] INF: Accessing Tracker device
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $31 = 566248538669473
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $32 = 4306706080
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $33 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $34 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $35 = 4308852592
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $36 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $37 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $38 = 4304646736
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $39 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $40 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $41 = 4306715248
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $42 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $43 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $44 = 4354846064
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $45 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $46 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $47 = 4306709136
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $48 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $49 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $50 = 4304646736
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $51 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $52 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $53 = 4304642496
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $54 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $55 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $56 = 4306706368
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $57 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $58 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $59 = 4304642496
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $60 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $61 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $62 = 4306716784
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $63 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $64 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $65 = 4354890960
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $66 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $67 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $68 = 4306706080
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $69 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $70 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $71 = 4306706352
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $72 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $73 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $74 = 4306705408
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $75 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $76 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $77 = 4308780496
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $78 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $79 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $80 = 4354929232
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $81 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $82 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $83 = 4308780496
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $84 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $85 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $86 = 4355786896
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $87 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $88 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $89 = 4306703120
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $90 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $91 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $92 = 4306716784
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $93 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $94 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $95 = 4355786848
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $96 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $97 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $98 = 4306720400
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $99 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $100 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $101 = 4306606096
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $102 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $103 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $104 = 4308882080
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $105 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $106 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $107 = 4306703120
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $108 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $109 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $110 = 4306621552
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $111 = 0
+(lldb)  c
+Process 40965 resuming
+
+The Eye Tribe Tracker stands ready!
+
+[17:35:49.252] INF: Default calibration profile loaded!
+
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $112 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $113 = 4354917104
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $114 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $115 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $116 = 4403820552
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $117 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $118 = 2255098415677729
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $119 = 4354886400
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $120 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $121 = 566248588968225
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $122 = 4304658928
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $123 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $124 = 1129198475280673
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $125 = 4355785440
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $126 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $127 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $128 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $129 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $130 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $131 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $132 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $133 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $134 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $135 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $136 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $137 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $138 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $139 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $140 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $141 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $142 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $143 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $144 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $145 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $146 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $147 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $148 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $149 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $150 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $151 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $152 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $153 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $154 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $155 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $156 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $157 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $158 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $159 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $160 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $161 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $162 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $163 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $164 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $165 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $166 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $167 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $168 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $169 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $170 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $171 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $172 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $173 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $174 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $175 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $176 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $177 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $178 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $179 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $180 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $181 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $182 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $183 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $184 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $185 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $186 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $187 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $188 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $189 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $190 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $191 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $192 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $193 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $194 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $195 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $196 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $197 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $198 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $199 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $200 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $201 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $202 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $203 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $204 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $205 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $206 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $207 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $208 = 565149043786017
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $209 = 4435724344
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $210 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
+(lldb)  e ((uint64_t*)$rbx)[0]
+(uint64_t) $211 = 566248538636577
+(lldb)  e ((uint64_t*)$rbx)[1]
+(uint64_t) $212 = 4306694352
+(lldb)  e ((uint32_t*)$rbx)[4]
+(uint32_t) $213 = 0
+(lldb)  c
+Process 40965 resuming
+Command #4 'c' continued the target.
