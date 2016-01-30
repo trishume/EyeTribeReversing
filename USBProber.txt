@@ -1,0 +1,362 @@
+Super Speed device @ 2 (0x15200000): .............................................   Miscellaneous/Common Class device: "TheEyeTribe"
+    Port Information:   0x101a
+           Not Captive
+           Attached to Root Hub
+           External Device
+           Connected
+           Enabled
+           Connected to External Port
+    Number Of Endpoints (includes EP0):
+        Total Endpoints for Configuration 1 (current):   3
+    Device Descriptor
+        Descriptor Version Number:   0x0300
+        Device Class:   239   (Miscellaneous)
+        Device Subclass:   2   (Common Class)
+        Device Protocol:   1   (Interface Association)
+        Device MaxPacketSize:   9
+        Device VendorID/ProductID:   0x29AB/0x00FB   (unknown vendor)
+        Device Version Number:   0x0000
+        Number of Configurations:   1
+        Manufacturer String:   1 "Leopard Imaging"
+        Product String:   2 "TheEyeTribe"
+        Serial Number String:   3 "0000000001"
+    BOS Descriptor
+        Length (and contents):   22
+            Raw Descriptor (hex)    0000: 05 0F 16 00 02 07 10 02  02 00 00 00 0A 10 03 00
+            Raw Descriptor (hex)    0010: 0E 00 03 00 00 00
+        Number of Capability Descriptors:   2
+            USB 2.0 Extension:   2
+                bmAttributes:   0x00000002
+                   Bit 1:  Link Power Management supported
+            SuperSpeed USB Device:   3
+                bmAttributes:   0x00000000
+                wSpeedsSupported:   0x000e
+                   Bit 1:  Full Speed supported
+                   Bit 2:  High Speed supported
+                   Bit 3:  Super Speed (5Gbps) supported
+                bFunctionalitySupport:   0x0003:  Full Speed and above
+                bU1ExitLat:   Zero
+                wU2ExitLat:   Zero
+    Configuration Descriptor (current config)
+        Length (and contents):   427
+            Raw Descriptor (hex)    0000: 09 02 AB 01 02 01 00 80  70 08 0B 00 02 0E 03 00
+            Raw Descriptor (hex)    0010: 00 09 04 00 00 01 0E 01  00 00 0D 24 01 00 01 50
+            Raw Descriptor (hex)    0020: 00 AC 54 80 01 01 01 12  24 02 01 01 02 00 00 01
+            Raw Descriptor (hex)    0030: 00 62 00 01 00 03 2A 0A  00 0C 24 05 02 01 00 40
+            Raw Descriptor (hex)    0040: 03 68 16 00 00 1C 24 06  03 E1 21 E3 78 AC C8 A5
+            Raw Descriptor (hex)    0050: 40 8A C9 75 A2 A0 2C 74  FB 01 01 02 03 FF FF 00
+            Raw Descriptor (hex)    0060: 00 09 24 03 04 01 01 00  03 00 07 05 82 03 40 00
+            Raw Descriptor (hex)    0070: 01 06 30 00 00 00 04 05  25 03 40 00 09 04 01 00
+            Raw Descriptor (hex)    0080: 01 0E 02 00 00 0E 24 01  01 19 01 83 00 04 01 00
+            Raw Descriptor (hex)    0090: 00 01 00 1B 24 04 01 08  59 55 59 32 00 00 10 00
+            Raw Descriptor (hex)    00a0: 80 00 00 AA 00 38 9B 71  10 01 10 09 00 00 1E 24
+            Raw Descriptor (hex)    00b0: 05 01 03 80 04 00 06 00  00 1C 02 00 00 1C 02 00
+            Raw Descriptor (hex)    00c0: 00 6C 00 C2 A6 05 00 01  C2 A6 05 00 1E 24 05 02
+            Raw Descriptor (hex)    00d0: 03 0C 04 00 06 00 E0 B0  05 00 E0 B0 05 00 90 30
+            Raw Descriptor (hex)    00e0: 00 15 16 05 00 01 15 16  05 00 1E 24 05 03 03 00
+            Raw Descriptor (hex)    00f0: 03 00 04 00 00 A0 05 00  00 A0 05 00 00 18 00 0A
+            Raw Descriptor (hex)    0100: 8B 02 00 01 0A 8B 02 00  1E 24 05 04 03 00 03 00
+            Raw Descriptor (hex)    0110: 06 00 00 E8 05 00 00 E8  05 00 00 24 00 0F A2 03
+            Raw Descriptor (hex)    0120: 00 01 0F A2 03 00 1E 24  05 05 03 00 09 00 06 00
+            Raw Descriptor (hex)    0130: 00 64 0B 00 00 64 0B 00  00 6C 00 0F A2 03 00 01
+            Raw Descriptor (hex)    0140: C2 A6 05 00 1E 24 05 06  03 18 08 00 06 00 C0 61
+            Raw Descriptor (hex)    0150: 0B 00 C0 61 0B 00 20 61  00 C2 A6 05 00 01 15 16
+            Raw Descriptor (hex)    0160: 05 00 1E 24 05 07 03 00  06 00 04 00 00 40 0B 00
+            Raw Descriptor (hex)    0170: 00 40 0B 00 00 30 00 15  16 05 00 01 0A 8B 02 00
+            Raw Descriptor (hex)    0180: 1E 24 05 08 03 00 06 00  06 00 00 D0 0B 00 00 D0
+            Raw Descriptor (hex)    0190: 0B 00 00 48 00 0A 8B 02  00 01 0F A2 03 00 07 05
+            Raw Descriptor (hex)    01a0: 83 02 00 04 00 06 30 0F  00 00 00
+        Number of Interfaces:   2
+        Configuration Value:   1
+        Attributes:   0x80 (bus-powered)
+        MaxPower:   896 mA
+        Interface Association   Video/Interface Collection
+            First Interface   0
+            Interface Count   2
+            Function Class   14   (Video)
+            Function Subclass   3   (Interface Collection)
+            Interface Protocol   0
+            Function String   0 (none)
+        Interface #0 - Video/Control
+            Alternate Setting   0
+            Number of Endpoints   1
+            Interface Class:   14   (Video)
+            Interface Subclass;   1   (Control)
+            Interface Protocol:   0
+            VDC (Control) Header
+                Length (and contents):   13
+                    Raw Descriptor (hex)   0000: 0D 24 01 00 01 50 00 AC  54 80 01 01 01
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x1
+                Specification Version Number:   01.0
+                Device Clock Frequency (Hz):   25187500
+                Number of Video Streaming Interfaces:   1
+                Video Interface Number:   1
+            VDC (Control) Input Terminal
+                Length (and contents):   18
+                    Raw Descriptor (hex)    0000: 12 24 02 01 01 02 00 00  01 00 62 00 01 00 03 2A
+                    Raw Descriptor (hex)    0010: 0A 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x2
+                Terminal ID   1
+                Input Terminal Type:   0x201 (Camera Sensor)
+                Input Terminal ID:   0 [NONE]
+                Input Terminal String Index:   0 [NONE]
+                Minimum Focal Length   1
+                Maximum Focal Length   98
+                Ocular Focal Length   1
+                Controls Supported   Description
+                       Auto Exposure Mode
+                       Exposure Time (Absolute)
+                       Focus (Absolute)
+                       Zoom (Absolute)
+                       Pan (Absolute)
+            VDC (Control) Processing Unit
+                Length (and contents):   12
+                    Raw Descriptor (hex)   0000: 0C 24 05 02 01 00 40 03  68 16 00 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x5
+                Unit ID:   2
+                Source ID:   1
+                Digital Multiplier (100X):   16384
+                Controls Supported   Description
+                       Saturation
+                       Gamma
+                       White Balance Temperature
+                       Gain
+                       Power Line Frequency
+                       White Balance Temperature, Auto
+                Processing Unit String Index:   0 [NONE]
+            VDC (Control) Extension Unit
+                Length (and contents):   28
+                    Raw Descriptor (hex)    0000: 1C 24 06 03 E1 21 E3 78  AC C8 A5 40 8A C9 75 A2
+                    Raw Descriptor (hex)    0010: A0 2C 74 FB 01 01 02 03  FF FF 00 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x6
+                bLength:   28
+                bDescriptorType:   36
+                bDescriptorSubType:   6
+                Unit ID:   3
+                Vendor UUID:   78e321e1-c8ac-40a5-8ac9-75a2a02c74fb
+                Number of Controls:   1
+                Number of In pins:   1
+                Source ID Pin[0]:   2
+                Controls Supported   Description
+                       Vendor Specific Byte[i] = 0xff
+                       Vendor Specific Byte[i] = 0xff
+                       Vendor Specific Byte[i] = 0x0
+                Processing Unit String Index:   0 [NONE]
+            VDC (Control) Output Terminal
+                Length (and contents):   9
+                    Raw Descriptor (hex)   0000: 09 24 03 04 01 01 00 03  00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x3
+                Terminal ID:   4
+                Output Terminal Type:   0x101 (USB streaming)
+                Output Terminal ID:   0 [NONE]
+                Output Terminal String Index:   0 [NONE]
+            Endpoint 0x82 - Interrupt Input
+                Address:   0x82  (IN)
+                Attributes:   0x03  (Interrupt periodic)
+                Max Packet Size:   64
+                Polling Interval:   1 (1 microframe (125 microsecs) )
+                SuperSpeed Endpoint Companion
+                    bMaxBurst:   0
+                    bmAttributes:   0 (Mult: 0,  max number of packets: 1)
+                    wBytesPerInterval:   1024
+            VDC Specific Interrupt Endpoint
+                Length (and contents):   5
+                    Raw Descriptor (hex)   0000: 05 25 03 40 00
+                Max Transfer Size:   64
+        Interface #1 - Video/Streaming
+            Alternate Setting   0
+            Number of Endpoints   1
+            Interface Class:   14   (Video)
+            Interface Subclass;   2   (Streaming)
+            Interface Protocol:   0
+            VDC (Streaming) Input Header
+                Length (and contents):   14
+                    Raw Descriptor (hex)   0000: 0E 24 01 01 19 01 83 00  04 01 00 00 01 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x1
+                bNumFormats:   1
+                wTotalLength:   0x119 (281)
+                bEndpointAddress:   0x83
+                Capabilities (0x0)   bmInfo
+                bTerminalLink:   4
+                bStillCaptureMethod:   1 (Method 1)
+                bTriggerSupport   0 (Not Supported)
+                bTriggerUsage   Ignored because bTriggerSupport is 0
+                bControlSize:   0x1
+                bmaControls( Format 1):   0x0
+            VDC (Streaming) Uncompressed Format Descriptor
+                Length (and contents):   27
+                    Raw Descriptor (hex)    0000: 1B 24 04 01 08 59 55 59  32 00 00 10 00 80 00 00
+                    Raw Descriptor (hex)    0010: AA 00 38 9B 71 10 01 10  09 00 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x4
+                bFormatIndex:   0x1
+                bNumFrameDescriptors:   0x8
+                Format GUID:   32595559-0000-0010-8000-00aa00389b71
+                bBitsPerPixel:   0x10 (16)
+                bDefaultFrameIndex:   0x1
+                bAspectRatioX:   0x10
+                bAspectRatioY:   0x9
+                bmInterlaceFlags   (0x0)
+                    Interlace Stream or variable   NO
+                    Fields per Frame   2
+                    Field 1 First   No
+                    Field Pattern   Field 1 only
+                    Display Mode   Bob only
+                Copy Protection:   No Restrictions
+            VDC (Streaming) Uncompressed Frame Descriptor
+                Length (and contents):   30
+                    Raw Descriptor (hex)    0000: 1E 24 05 01 03 80 04 00  06 00 00 1C 02 00 00 1C
+                    Raw Descriptor (hex)    0010: 02 00 00 6C 00 C2 A6 05  00 01 C2 A6 05 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x5
+                bFrameIndex:   0x1
+                bmCapabilities    (0x3)
+                       Still Image supported
+                       Unknown capabilities
+                wWidth:   0x480 (1152)
+                wHeight:   0x600 (1536)
+                dwMinBitRate (bps):   0x21c0000 (35389440)
+                dwMaxBitRate (bps):   0x21c0000 (35389440)
+                dwMaxVideoFrameBufferSize (bytes):   0x6c0000 (7077888)
+                dwDefaultFrameInterval (100 ns):   0x5a6c2 (  37.000 ms)
+                Discrete Frame Intervals supported   0x1
+                    dwFrameInterval[1] (100 ns)   0x5a6c2 (  37.000 ms)
+            VDC (Streaming) Uncompressed Frame Descriptor
+                Length (and contents):   30
+                    Raw Descriptor (hex)    0000: 1E 24 05 02 03 0C 04 00  06 00 E0 B0 05 00 E0 B0
+                    Raw Descriptor (hex)    0010: 05 00 90 30 00 15 16 05  00 01 15 16 05 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x5
+                bFrameIndex:   0x2
+                bmCapabilities    (0x3)
+                       Still Image supported
+                       Unknown capabilities
+                wWidth:   0x40c (1036)
+                wHeight:   0x600 (1536)
+                dwMinBitRate (bps):   0x5b0e000 (95477760)
+                dwMaxBitRate (bps):   0x5b0e000 (95477760)
+                dwMaxVideoFrameBufferSize (bytes):   0x309000 (3182592)
+                dwDefaultFrameInterval (100 ns):   0x51615 (  33.000 ms)
+                Discrete Frame Intervals supported   0x1
+                    dwFrameInterval[1] (100 ns)   0x51615 (  33.000 ms)
+            VDC (Streaming) Uncompressed Frame Descriptor
+                Length (and contents):   30
+                    Raw Descriptor (hex)    0000: 1E 24 05 03 03 00 03 00  04 00 00 A0 05 00 00 A0
+                    Raw Descriptor (hex)    0010: 05 00 00 18 00 0A 8B 02  00 01 0A 8B 02 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x5
+                bFrameIndex:   0x3
+                bmCapabilities    (0x3)
+                       Still Image supported
+                       Unknown capabilities
+                wWidth:   0x300 (768)
+                wHeight:   0x400 (1024)
+                dwMinBitRate (bps):   0x5a00000 (94371840)
+                dwMaxBitRate (bps):   0x5a00000 (94371840)
+                dwMaxVideoFrameBufferSize (bytes):   0x180000 (1572864)
+                dwDefaultFrameInterval (100 ns):   0x28b0a (  16.000 ms)
+                Discrete Frame Intervals supported   0x1
+                    dwFrameInterval[1] (100 ns)   0x28b0a (  16.000 ms)
+            VDC (Streaming) Uncompressed Frame Descriptor
+                Length (and contents):   30
+                    Raw Descriptor (hex)    0000: 1E 24 05 04 03 00 03 00  06 00 00 E8 05 00 00 E8
+                    Raw Descriptor (hex)    0010: 05 00 00 24 00 0F A2 03  00 01 0F A2 03 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x5
+                bFrameIndex:   0x4
+                bmCapabilities    (0x3)
+                       Still Image supported
+                       Unknown capabilities
+                wWidth:   0x300 (768)
+                wHeight:   0x600 (1536)
+                dwMinBitRate (bps):   0x5e80000 (99090432)
+                dwMaxBitRate (bps):   0x5e80000 (99090432)
+                dwMaxVideoFrameBufferSize (bytes):   0x240000 (2359296)
+                dwDefaultFrameInterval (100 ns):   0x3a20f (  23.000 ms)
+                Discrete Frame Intervals supported   0x1
+                    dwFrameInterval[1] (100 ns)   0x3a20f (  23.000 ms)
+            VDC (Streaming) Uncompressed Frame Descriptor
+                Length (and contents):   30
+                    Raw Descriptor (hex)    0000: 1E 24 05 05 03 00 09 00  06 00 00 64 0B 00 00 64
+                    Raw Descriptor (hex)    0010: 0B 00 00 6C 00 0F A2 03  00 01 C2 A6 05 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x5
+                bFrameIndex:   0x5
+                bmCapabilities    (0x3)
+                       Still Image supported
+                       Unknown capabilities
+                wWidth:   0x900 (2304)
+                wHeight:   0x600 (1536)
+                dwMinBitRate (bps):   0xb640000 (191102976)
+                dwMaxBitRate (bps):   0xb640000 (191102976)
+                dwMaxVideoFrameBufferSize (bytes):   0x6c0000 (7077888)
+                dwDefaultFrameInterval (100 ns):   0x3a20f (  23.000 ms)
+                Discrete Frame Intervals supported   0x1
+                    dwFrameInterval[1] (100 ns)   0x5a6c2 (  37.000 ms)
+            VDC (Streaming) Uncompressed Frame Descriptor
+                Length (and contents):   30
+                    Raw Descriptor (hex)    0000: 1E 24 05 06 03 18 08 00  06 00 C0 61 0B 00 C0 61
+                    Raw Descriptor (hex)    0010: 0B 00 20 61 00 C2 A6 05  00 01 15 16 05 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x5
+                bFrameIndex:   0x6
+                bmCapabilities    (0x3)
+                       Still Image supported
+                       Unknown capabilities
+                wWidth:   0x818 (2072)
+                wHeight:   0x600 (1536)
+                dwMinBitRate (bps):   0xb61c000 (190955520)
+                dwMaxBitRate (bps):   0xb61c000 (190955520)
+                dwMaxVideoFrameBufferSize (bytes):   0x612000 (6365184)
+                dwDefaultFrameInterval (100 ns):   0x5a6c2 (  37.000 ms)
+                Discrete Frame Intervals supported   0x1
+                    dwFrameInterval[1] (100 ns)   0x51615 (  33.000 ms)
+            VDC (Streaming) Uncompressed Frame Descriptor
+                Length (and contents):   30
+                    Raw Descriptor (hex)    0000: 1E 24 05 07 03 00 06 00  04 00 00 40 0B 00 00 40
+                    Raw Descriptor (hex)    0010: 0B 00 00 30 00 15 16 05  00 01 0A 8B 02 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x5
+                bFrameIndex:   0x7
+                bmCapabilities    (0x3)
+                       Still Image supported
+                       Unknown capabilities
+                wWidth:   0x600 (1536)
+                wHeight:   0x400 (1024)
+                dwMinBitRate (bps):   0xb400000 (188743680)
+                dwMaxBitRate (bps):   0xb400000 (188743680)
+                dwMaxVideoFrameBufferSize (bytes):   0x300000 (3145728)
+                dwDefaultFrameInterval (100 ns):   0x51615 (  33.000 ms)
+                Discrete Frame Intervals supported   0x1
+                    dwFrameInterval[1] (100 ns)   0x28b0a (  16.000 ms)
+            VDC (Streaming) Uncompressed Frame Descriptor
+                Length (and contents):   30
+                    Raw Descriptor (hex)    0000: 1E 24 05 08 03 00 06 00  06 00 00 D0 0B 00 00 D0
+                    Raw Descriptor (hex)    0010: 0B 00 00 48 00 0A 8B 02  00 01 0F A2 03 00
+                bDescriptorType:   0x24
+                bDescriptorSubType:   0x5
+                bFrameIndex:   0x8
+                bmCapabilities    (0x3)
+                       Still Image supported
+                       Unknown capabilities
+                wWidth:   0x600 (1536)
+                wHeight:   0x600 (1536)
+                dwMinBitRate (bps):   0xbd00000 (198180864)
+                dwMaxBitRate (bps):   0xbd00000 (198180864)
+                dwMaxVideoFrameBufferSize (bytes):   0x480000 (4718592)
+                dwDefaultFrameInterval (100 ns):   0x28b0a (  16.000 ms)
+                Discrete Frame Intervals supported   0x1
+                    dwFrameInterval[1] (100 ns)   0x3a20f (  23.000 ms)
+            Endpoint 0x83 - Bulk Input
+                Address:   0x83  (IN)
+                Attributes:   0x02  (Bulk)
+                Max Packet Size:   1024
+                SuperSpeed Endpoint Companion
+                    bMaxBurst:   15
+                    bmAttributes:   0 (1 MaxStreams)
