@@ -1,4 +1,4 @@
-txt = IO.read("log2.txt")
+txt = IO.read("log3.txt")
 
 REG = /\(\(uint64_t\*\)\$rbx\)\[0\]
 \(uint64_t\) \$\d+ = (\d+)
@@ -13,12 +13,10 @@ bRequestMapping = {
 }
 
 unitMapping = {
-  0x01 => "VC_HEADER",
-  0x02 => "VC_INPUT_TERMINAL",
-  0x03 => "VC_OUTPUT_TERMINAL",
-  0x04 => "VC_SELECTOR_UNIT",
-  0x05 => "VC_PROCESSING_UNIT",
-  0x06 => "VC_EXTENSION_UNIT",
+  0x01 => "VC_INPUT_TERMINAL",
+  0x02 => "VC_PROCESSING_UNIT",
+  0x03 => "VC_EXTENSION_UNIT",
+  0x04 => "VC_OUTPUT_TERMINAL",
 }
 
 outputControlMapping = {
@@ -55,6 +53,35 @@ inputControlMapping = {
   0x11 => "CT_PRIVACY_CONTROL",
 }
 
+processingMapping = {
+  0x00 => "PU_CONTROL_UNDEFINED",
+  0x01 => "PU_BACKLIGHT_COMPENSATION_CONTROL",
+  0x02 => "PU_BRIGHTNESS_CONTROL",
+  0x03 => "PU_CONTRAST_CONTROL",
+  0x04 => "PU_GAIN_CONTROL",
+  0x05 => "PU_POWER_LINE_FREQUENCY_CONTROL",
+  0x06 => "PU_HUE_CONTROL",
+  0x07 => "PU_SATURATION_CONTROL",
+  0x08 => "PU_SHARPNESS_CONTROL",
+  0x09 => "PU_GAMMA_CONTROL",
+  0x0A => "PU_WHITE_BALANCE_TEMPERATURE_CONTROL",
+  0x0B => "PU_WHITE_BALANCE_TEMPERATURE_AUTO_CONTROL",
+  0x0C => "PU_WHITE_BALANCE_COMPONENT_CONTROL",
+  0x0D => "PU_WHITE_BALANCE_COMPONENT_AUTO_CONTROL",
+  0x0E => "PU_DIGITAL_MULTIPLIER_CONTROL",
+  0x0F => "PU_DIGITAL_MULTIPLIER_LIMIT_CONTROL",
+  0x10 => "PU_HUE_AUTO_CONTROL",
+  0x11 => "PU_ANALOG_VIDEO_STANDARD_CONTROL",
+  0x12 => "PU_ANALOG_LOCK_STATUS_CONTROL",
+}
+
+mappingMapping = {
+  "VC_INPUT_TERMINAL" => inputControlMapping,
+  "VC_PROCESSING_UNIT" => processingMapping,
+  "VC_EXTENSION_UNIT" => nil,
+  "VC_OUTPUT_TERMINAL" => outputControlMapping,
+}
+
 def bytes(n)
   [n & 0xFF, (n >> 8) & 0xFF, (n >> 16) & 0xFF, (n >> 24) & 0xFF]
 end
@@ -72,9 +99,9 @@ txt.scan(REG) do |m|
     unitId: (n >> (16*2+8)) & 0xFF,
   }
   x[:req] = bRequestMapping[x[:bRequest]]
-  x[:sel] = unitMapping[x[:unitId]]
-  x[:outMsg] = outputControlMapping[x[:selector]] if [3,4].include? x[:unitId]
-  x[:inMsg] = inputControlMapping[x[:selector]] if x[:unitId] == 2
+  x[:unit] = unitMapping[x[:unitId]]
+  mapping = mappingMapping[x[:unit]]
+  x[:msg] = mapping[x[:selector]] if mapping
   p x
 
   ints = m[1].split(',').map {|s| s[/= \d+/][2..-1].to_i}
