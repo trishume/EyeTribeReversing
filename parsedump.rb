@@ -1,4 +1,9 @@
-txt = IO.read("log3.txt")
+txt = IO.read("log2.txt")
+
+REG = /\(\(uint64_t\*\)\$rbx\)\[0\]
+\(uint64_t\) \$\d+ = (\d+)
+\(lldb\)  p \*\(uint32_t\(\*\)\[15\]\)\(\(\(uint32_t\*\*\)\$rbx\)\[1\]\)
+\(uint32_t \[15\]\) \$\d+ = \((.*)\)/
 
 bRequestMapping = {
  0x01 => "UVC_SET_CUR",
@@ -7,7 +12,7 @@ bRequestMapping = {
  0x83 => "UVC_GET_MAX",
 }
 
-selectorMapping = {
+unitMapping = {
   0x01 => "VC_HEADER",
   0x02 => "VC_INPUT_TERMINAL",
   0x03 => "VC_OUTPUT_TERMINAL",
@@ -50,7 +55,12 @@ inputControlMapping = {
   0x11 => "CT_PRIVACY_CONTROL",
 }
 
-txt.scan(/\(\(uint64_t\*\)\$rbx\)\[0\]\n\(uint64_t\) \$\d+ = (\d+)/) do |m|
+def bytes(n)
+  [n & 0xFF, (n >> 8) & 0xFF, (n >> 16) & 0xFF, (n >> 24) & 0xFF]
+end
+
+txt.scan(REG) do |m|
+  # NOTE: this is little endian - least significant byte is lowest memory address
   n = m[0].to_i
   x = {
     bmRequestType: (n & 0xFF),
@@ -62,8 +72,12 @@ txt.scan(/\(\(uint64_t\*\)\$rbx\)\[0\]\n\(uint64_t\) \$\d+ = (\d+)/) do |m|
     unitId: (n >> (16*2+8)) & 0xFF,
   }
   x[:req] = bRequestMapping[x[:bRequest]]
-  x[:sel] = selectorMapping[x[:selector]]
-  x[:outMsg] = outputControlMapping[x[:unitId]] if [3,4].include? x[:selector]
-  x[:inMsg] = inputControlMapping[x[:unitId]] if x[:selector] == 2
+  x[:sel] = unitMapping[x[:unitId]]
+  x[:outMsg] = outputControlMapping[x[:selector]] if [3,4].include? x[:unitId]
+  x[:inMsg] = inputControlMapping[x[:selector]] if x[:unitId] == 2
   p x
+
+  ints = m[1].split(',').map {|s| s[/= \d+/][2..-1].to_i}
+  bytes = ints.flat_map {|i| bytes(i) }
+  p bytes.take(x[:wLength])
 end
