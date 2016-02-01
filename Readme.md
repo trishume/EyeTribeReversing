@@ -1,6 +1,9 @@
 # TheEyeTribe Tracker Reverse Engineering
 
-This repo contains the dumps, notes and scripts created by me in the process of reverse engineering the protocol used by the [Eye Tribe Tracker](http://theeyetribe.com/)
+This repo contains the dumps, notes and scripts created by me in the process of reverse engineering the protocol used by the [Eye Tribe Tracker](http://theeyetribe.com/).
+I've successfully figured out which control request to send to turn on the IR illuminators and wrote a test app that can do so.
+
+![Captured Frame](http://i.imgur.com/g3IXUdo.jpg)
 
 ## Why am I doing this?
 
@@ -35,9 +38,11 @@ During most of these steps I copy-pasted things into the `eyetribe.h` file, whic
 - Ran the Eye Tribe server under LLDB and set breakpoints based on the disassembly I had done to find where control messages were sent, poked around until I found a register pointing to a [IOUSBDevRequest](https://developer.apple.com/library/mac/documentation/Kernel/Reference/USB_kernel_header_reference/index.html#//apple_ref/c/tdef/IOUSBDevRequest).
 - Attached a script to an LLDB breakpoint on `IOUSBInterfaceClass::interfaceControlRequest(void*, unsigned char, IOUSBDevRequest*) + 12` which printed out the bytes of the UIUSBDevRequest as integers and the data pointed to by the data pointer. (See log2.txt and log3.txt for output)
 - Wrote a Ruby script to extract the control request fields and names from the LLDB logs (`parsedump.rb`). It took reading the [UVC Spec](http://www.cajunbot.com/wiki/images/8/85/USB_Video_Class_1.1.pdf), the USB Prober output (found in `USBProber.txt`), and the aformentioned [UVCCameraControl.m](https://github.com/HBehrens/CamHolderApp/blob/master/CamHolderApp%2FUVCCameraControl.m) to figure out where fields were and how they corresponded to items in the spec.
+- Hacked together an OpenFrameworks app (see `eyeTribeTest` folder) which captures from the camera and sets UVC controls using [ofxUVC](https://github.com/atduskgreg/ofxUVC). It successfully turns on the lights and adjusts the gain! w00t!
 
-Status: I've discovered the extension selectors and data sent during initial connection and when turning on the camera lights.
+Status: I can successfully control the lights and capture raw footage!
 
-Next step: Write an app that first gets the raw camera stream without lights on, and then try adding extension unit messages from the logs until the lights turn on.
-
-Current fears: When disassembling I found that the CryptoPP library was linked into the code. I don't know if/how they use it but I sure hope that the USB protocol isn't authenticated.
+So far there are a couple likely candidates for why my accuracy is poor:
+- When I go into file recording mode as opposed to preview, it starts replacing many frames with solid green.
+- The gain that I snooped the eye tribe server sending is so high that it seems to wrap the 8-bit pixel brightnesses, causing a weird image.
+- The glints aren't that distinguishable, especially when I'm looking at a significant angle.
