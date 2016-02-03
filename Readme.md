@@ -3,6 +3,8 @@
 This repo contains the dumps, notes and scripts created by me in the process of reverse engineering the protocol used by the [Eye Tribe Tracker](http://theeyetribe.com/).
 I've successfully figured out which control request to send to turn on the IR illuminators and wrote a test app that can do so.
 
+I wrote [a blog post](http://thume.ca/2016/02/02/a-reverse-engineering-adventure-eye-tribes-usb-protocol/) about the adventures I had figuring this all out.
+
 ![Captured Frame](http://i.imgur.com/g3IXUdo.jpg)
 
 ## Why am I doing this?

@@ -1,4 +1,4 @@
-txt = IO.read("log3.txt")
+txt = IO.read("log2.txt")
 
 REG = /\(\(uint64_t\*\)\$rbx\)\[0\]
 \(uint64_t\) \$\d+ = (\d+)
