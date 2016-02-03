@@ -79,8 +79,8 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofRectangle previewWindow(20, 20, 640, 480);
-    ofRectangle playbackWindow(20+640, 20, 640, 480);
+    ofRectangle previewWindow(20, 20, 1280, 720);
+    ofRectangle playbackWindow(20+1280, 20, 640, 480);
 
     // draw the background boxes
     ofPushStyle();
@@ -213,6 +213,8 @@ void ofApp::keyReleased(int key){
     uvc_range_t range = [cameraControl getRangeForControl:control];
     curGain = [cameraControl getDataFor:UVC_GET_CUR withLength:control->size fromSelector:control->selector at:control->unit];
     ofLog() << "Gain:" << curGain << " min: " << range.min << " max: " << range.max;
+    ofLog() << "Brightness:" << [cameraControl getBrightness];
+    ofLog() << "Exposure:" << [cameraControl getExposure];
   }
   if(key == 'n'){
     [cameraControl setGain:0.5];
@@ -222,6 +224,11 @@ void ofApp::keyReleased(int key){
   }
   if(key == 'o'){
     [cameraControl setData:0 withLength:2 forSelector:3 at:3];
+  }
+  if(key == 'b'){
+    [cameraControl setBrightness:0.0];
+    [cameraControl setExposure:0.999];
+    // [cameraControl setExposure:0.5];
   }
 }
 
