@@ -5,6 +5,7 @@
 #include <IOKit/IOMessage.h>
 #include <IOKit/IOCFPlugIn.h>
 #include <IOKit/usb/IOUSBLib.h>
+#include <stdint.h>
 
 
 #define UVC_INPUT_TERMINAL_ID 0x01
@@ -49,20 +50,20 @@ typedef struct {
 
 
 @interface UVCCameraControl : NSObject {
-	long dataBuffer;
+	uint64_t dataBuffer;
 	IOUSBInterfaceInterface190 **interface;
-    
-    long interfaceNum;
+
+    uint64_t interfaceNum;
 }
 
 
 - (id)initWithLocationID:(UInt32)locationID;
-- (id)initWithVendorID:(long)vendorID productID:(long)productID interfaceNum:(long)interfaceNum;
+- (id)initWithVendorID:(uint64_t)vendorID productID:(uint64_t)productID interfaceNum:(uint64_t)interfaceNum;
 - (IOUSBInterfaceInterface190 **)getControlInferaceWithDeviceInterface:(IOUSBDeviceInterface **)deviceInterface;
 
 - (BOOL)sendControlRequest:(IOUSBDevRequest)controlRequest;
-- (BOOL)setData:(long)value withLength:(int)length forSelector:(int)selector at:(int)unitID;
-- (long)getDataFor:(int)type withLength:(int)length fromSelector:(int)selector at:(int)unitID;
+- (BOOL)setData:(uint64_t)value withLength:(int)length forSelector:(int)selector at:(int)unitID;
+- (uint64_t)getDataFor:(int)type withLength:(int)length fromSelector:(int)selector at:(int)unitID;
 
 - (uvc_range_t)getRangeForControl:(const uvc_control_info_t *)control;
 - (float)mapValue:(float)value fromMin:(float)fromMin max:(float)fromMax toMin:(float)toMin max:(float)toMax;
@@ -73,7 +74,7 @@ typedef struct {
 - (void) decrementExposure;
 - (void) setDefaultExposure;
 
-- (long) getInfoForControl:(uvc_control_info_t *)control;
+- (uint64_t) getInfoForControl:(uvc_control_info_t *)control;
 - (uvc_controls_t *) getControls;
 
 - (BOOL)setAutoExposure:(BOOL)enabled;

@@ -220,6 +220,8 @@ void ofApp::keyReleased(int key){
     uvc_range_t lightRange = [cameraControl getRangeForControl:irControl];
     curLights = [cameraControl getDataFor:UVC_GET_CUR withLength:irControl->size fromSelector:irControl->selector at:irControl->unit];
     ofLog() << "Lights: " << curLights << " min: " << lightRange.min << " max: " << lightRange.max;
+    uint64_t dunnoVal = [cameraControl getDataFor:UVC_GET_CUR withLength:8 fromSelector:4 at:irControl->unit];
+    ofLog() << "Dunno: " << dunnoVal;
   }
   if(key == 'n'){
     [cameraControl setGain:0.5];
@@ -234,6 +236,15 @@ void ofApp::keyReleased(int key){
     [cameraControl setBrightness:0.0];
     [cameraControl setExposure:0.998];
     // [cameraControl setExposure:0.5];
+  }
+  if(key == 'i') {
+    [cameraControl setData:0x00f000fa00f000faLL withLength:8 forSelector:4 at:3];
+  }
+  if(key == 'I') {
+    [cameraControl setData:0x00f000fa00f000faLL withLength:8 forSelector:4 at:3];
+  }
+  if(key == 'K') {
+    [cameraControl setData:0x0LL withLength:8 forSelector:4 at:3];
   }
 }
 
