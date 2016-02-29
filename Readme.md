@@ -7,6 +7,12 @@ I wrote [a blog post](http://thume.ca/2016/02/02/a-reverse-engineering-adventure
 
 ![Captured Frame](http://i.imgur.com/g3IXUdo.jpg)
 
+## Main findings
+
+Sending a UVC control `UVC_SET_CUR` request on selector 3 for unit 3 (the extension unit) will control the IR lights.
+The Eye Tribe tracker has 4 columns of three LEDs, two on the left and two on the right. Each column can be individually controlled by setting the first 4 bits of this selector.
+Thus sending the value `0b1111` (15) will turn all the lights on, and `0` will turn them all off. The 5th bit makes any lights set to on only flash on for every second frame, presumably to allow subtraction of background IR light sources at the cost of halving the effective frame rate. The rest of the bits appear to do nothing.
+
 ## Why am I doing this?
 
 A large part of why I'm doing this is that I wanted to learn and try my hand at reverse engineering and disassembling some closed source software. But there is also the fact that it is the only forseeable path to being able to use the (albeit only $100) eye tracker I bought which is currently a mostly useless brick on my desk:
